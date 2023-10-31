@@ -1,0 +1,182 @@
+@font-face {
+    font-family: Kajiro;
+    src: url(./Sources/kajiro/Kajiro/Kajiro\ Bold.ttf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+}
+
+.top-part{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.working_area{
+    margin: 0 auto;
+    height: 100vh;
+    width: 80%;
+    max-width: 1920px;
+    /* border: 3px solid #ff0000; */
+    position: relative;
+}
+
+.working_area>nav{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-left>img{
+    height: 60px;
+}
+
+.nav-left>a{
+    color: #ffff;
+    text-decoration: none;
+    font-family: 'Gilroy';
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    pointer-events: all;
+}
+
+.nav-right>a{
+    color: #ffff;
+    text-decoration: none;
+    font-family: 'Gilroy';
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    pointer-events: all;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.text-panel{
+    /* height: 100px; */
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%,-50%);
+    margin-top: 3.8vw;
+
+}
+
+.txt-left{
+    /* height: 100px; */
+    min-width: 50%;
+    /* background-color: rgb(255, 204, 0); */
+}
+
+.txt-left .inner-text{
+    height: 9vw;
+    /* background-color: red; */
+    overflow: hidden;
+    position: relative;
+}
+
+.txt-left .inner-text h1{
+    font-family:Kajiro;
+    color: #fff;
+    font-weight: 100;
+    font-size: 10vw;
+    line-height: .9;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.txt-left .inner-text h1:nth-child(1){
+    top: 0;
+}
+
+.txt-left button{
+    padding: .8vw 3vw;
+    font-size:3vw;
+    font-family:Kajiro;
+    margin-top: 2vw;
+    pointer-events: all;
+}
+
+
+
+.txt-right{
+    /* height: 100px; */
+    width: 17%;
+    /* background-color: rgb(72, 123, 27); */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
+.txt-right .image-cont{
+    height: 140px;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1527203561188-dae1bc1a417f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1430&q=80);
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+.txt-right p{
+    text-align: right;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+
+.back-part{
+    height: 100vh;
+    width: 100%;
+}
+
+.back-part img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
